@@ -1,0 +1,21 @@
+├── Animations/
+│   ├── Buttons/
+│   │   ├── button1.html
+│   │   └── [other button animations]
+│   ├── Hero/
+│   │   ├── hero1.html
+│   │   └── [other hero animations]
+│   └── Loader/
+│       ├── loader1.html
+│       └── [other loader animations]
+│
+├── Effects/
+│   └── [effect files]
+│
+├── React/
+│   └── [React components]
+│
+├── index.html
+├── styles.css
+├── script.js
+└── README.md
