@@ -29,7 +29,7 @@ Welcome to the Animations repository! This project is dedicated to showcasing a 
 
 ## Demo
 
-Check out the live demo of our animations: [Animations Live Demo](add in future)
+Check out the live demo of our animations: [Animations Live Demo](https://meetkumarchavda.github.io/Animations/)
 
 ## Installation
 
