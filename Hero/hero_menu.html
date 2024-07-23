@@ -3,9 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hero_menu</title>
+    <title>Hero Menu</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        thead {
+            background-color: #333;
+            color: #fff;
+        }
+        
+        thead th {
+            padding: 15px;
+            text-align: left;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        
+        tbody td {
+            padding: 15px;
+            text-align: left;
+        }
+        
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .demo-link {
+            color: #e91e63;
+        }
+        
+        .demo-link:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hero_menu</h1>
+    <header>
+        <h1>Hero Menu - Torque Editions</h1>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Link</th>
+                    <th>Demo Video Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TORQUE EDITIONS PANNING LAYOUT</td>
+                    <td><a href="./TORQUE EDITIONS PANNING LAYOUT/index.html" target="_blank">View</a></td>
+                    <td><a class="demo-link" href="..\Demo Videos\TORQUE EDITIONS PANNING LAYOUT.mp4" target="_blank">Demo</a></td>
+                </tr>
+                <tr>
+                    <td>Torque Edition 2</td>
+                    <td><a href="./TorqueEditions/edition2.html" target="_blank">View Edition 2</a></td>
+                    <td><a class="demo-link" href="https://example.com/edition2-demo.mp4" target="_blank">Watch Demo 2</a></td>
+                </tr>
+                <!-- <tr>
+                    <td>Torque Edition 3</td>
+                    <td><a href="./TorqueEditions/edition3.html" target="_blank">View Edition 3</a></td>
+                    <td><a class="demo-link" href="https://example.com/edition3-demo.mp4" target="_blank">Watch Demo 3</a></td>
+                </tr> -->
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
