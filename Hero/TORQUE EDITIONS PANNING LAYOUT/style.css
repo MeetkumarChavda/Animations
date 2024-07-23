@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'ABC Monument Grotesk';
+    src: url(ABCMonumentGrotesk-Regular-Trial.woff2);
+  }
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --background-color: #ffffff;
+    --text-color: #003344;
+    --grid-line: #00000011;
+  }
+
+  /* Color Schemes */
+  body.color1{
+    --text-color: #4d5334;
+    --background-color:#d0d1c8;
+  }
+  body.color2{
+    --text-color: #dea46e;
+    --background-color: #dfcebdba;
+  }
+  body.red{
+    --text-color:#950312;
+    --background-color: #f2cdcdce;
+  }
+  body.green {
+    --background-color:#b0b984b2;
+    --text-color: #515E0E; 
+  }
+  body.blue{
+    --text-color:#3A7AAE;
+    --background-color:#b4edf3c0;
+  }
+  body.yellow {
+    --text-color: #f8d11c;
+    --background-color:#f3efd2c6;
+  }
+  body.grey{
+    --background-color: #bdbdbd;
+    --text-color: #333;
+  }
+  body.orange{
+    --text-color: #FF9F00;
+    --background-color: #ead0a5ce;
+  }
+  body.chocolate {
+    --text-color: #3C2B1E;
+    --background-color:rgba(249, 233, 211, 0.704);
+  }
+  
+  body {
+    font-family: 'ABC Monument Grotesk', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.05;
+    color: var(--text-color);
+    background-size: 32px 32px;
+    background-image: linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+    background-position: center center;
+    background-color: var(--background-color);
+    transition: background-color 1s, color 1s;
+  }
+
+  /* Layout Styles */
+  section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    gap: 240px;
+    width: 3000px;
+    height: 2400px;
+    padding: 120px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    touch-action: none;
+  }
+  
+  section a {
+    display: block;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  section img {
+    max-width: 100%;
+    max-height: 560px;
+    transition: opacity 0.25s, transform 0.25s, box-shadow 0.25s;
+    box-shadow: 0 0 26px #000000c4;
+  }
+
+  h1 {
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    font-size: 5rem;
+  }
+
+  /* Hover States */
+  body.hovered img {
+    opacity: 0.1;
+  }
+
+  body.hovered a.hovered img {
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 0 0 16px #00000076;
+  }
+  
